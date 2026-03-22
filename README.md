@@ -56,20 +56,6 @@ A web application designed to help users track their mental health through mood 
    npm install
    ```
 
-4. **Environment Configuration:**
-
-   Create a `.env` file in the `backend` directory with the following variables:
-   ```env
-   MONGO_URI=mongodb://localhost:27017/mental-health-app
-   JWT_SECRET=your-super-secret-jwt-key
-   OPENAI_API_KEY=your-openai-api-key
-   GOOGLE_API_KEY=your-google-gemini-api-key
-   PORT=5000
-   ```
-
-   - Replace `your-super-secret-jwt-key` with a strong secret key
-   - Get API keys from [OpenAI](https://platform.openai.com/api-keys) and [Google AI Studio](https://makersuite.google.com/app/apikey)
-
 ## Usage
 
 1. **Start the backend server:**
@@ -108,62 +94,3 @@ A web application designed to help users track their mental health through mood 
 - `POST /api/chatbot/chat` - Send a message to the chatbot
 - `GET /api/chatbot/summary` - Get conversation summary
 
-## Project Structure
-
-```
-personalized-mental-health-assistant/
-├── backend/
-│   ├── src/
-│   │   ├── index.js
-│   │   ├── middleware/
-│   │   │   └── auth.js
-│   │   ├── models/
-│   │   │   ├── User.js
-│   │   │   ├── MoodEntry.js
-│   │   │   └── ConversationSummary.js
-│   │   └── routes/
-│   │       ├── auth.js
-│   │       ├── mood.js
-│   │       └── chatbot.js
-│   ├── package.json
-│   └── .env
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   ├── index.css
-│   │   ├── components/
-│   │   │   ├── Navbar.jsx
-│   │   │   └── ui.jsx
-│   │   ├── lib/
-│   │   │   └── api.js
-│   │   └── pages/
-│   │       ├── Login.jsx
-│   │       ├── Signup.jsx
-│   │       ├── Dashboard.jsx
-│   │       ├── MoodTracker.jsx
-│   │       └── Chatbot.jsx
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   ├── postcss.config.js
-│   └── index.html
-└── README.md
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Disclaimer
-
-This application is not a substitute for professional mental health care. If you're experiencing mental health concerns, please consult with qualified healthcare professionals.</content>
-<parameter name="filePath">d:\PROJECt\PORJ\Mini project mental\Mini project mental\Mini project mental\README.md
